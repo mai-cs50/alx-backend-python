@@ -2,14 +2,14 @@
 """Define type checking"""
 
 
-from typing import List, Tuple
+from typing import List, Tuple, Any
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
+def zoom_array(lst: Tuple[Any, ...], factor: int = 2) -> List[Any]:
     """Type checking Excercise"""
-    zoomed_in: List = [
+    zoomed_in: List[Any] = [
         item for item in lst
-        for i in range(int(factor))
+        for i in range((factor))
     ]
     return zoomed_in
 
