@@ -5,7 +5,7 @@
 from typing import List, Tuple, Any
 
 
-def zoom_array(lst: Tuple[Any, ...], factor: int = 2) -> List[Any]:
+def zoom_array(lst: List[Any], factor: int = 2) -> List[Any]:
     """Type checking Excercise"""
     zoomed_in: List[Any] = [
         item for item in lst
@@ -18,4 +18,4 @@ array = [12, 72, 91]
 
 zoom_2x = zoom_array(array)
 
-zoom_3x = zoom_array(array, 3.0)
+zoom_3x = zoom_array(array, 3)
