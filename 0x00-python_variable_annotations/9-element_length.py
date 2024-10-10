@@ -2,7 +2,7 @@
 """Write a type-annotated function make_multiplier"""
 
 
-from typing import List, Iterable, Sequence, TUple
+from typing import List, Iterable, Sequence, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
